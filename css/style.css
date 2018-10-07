@@ -1,0 +1,1061 @@
+@charset "utf-8";
+
+/* 共通 */
+body{
+    font-size: 16px;
+    line-height: 1.75;
+    font-family: "游ゴシック", Arial;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+video{
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+.subtitle{
+    font-size: 24px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.yellow{
+    color: #ffd61a;
+}
+.blacK{
+    color: #222222;
+}
+a:hover{
+    opacity: 0.7;
+}
+.fadein{
+    transition: opacity 2s;
+}
+.fadein1{
+    transition: opacity 1.5s;
+}
+.up{
+    position: fixed;
+    right: 1%;
+    text-align: center;
+    bottom: 10px;
+    z-index: 2;
+}
+.up a{
+    display: inline-block;
+}
+.uptop img{
+    width: 60%;
+}
+.uptop p{
+    margin-top: -7px;
+}
+
+/* ロード画面 */
+#mainwrap{
+    display: none;
+}
+.load{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: black;
+    position: relative;
+}
+.demo{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    color: white;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+}
+
+.load del{
+    font-size: 60px;
+    color: white;
+    letter-spacing: 5px;
+    font-family: 'Anton', Arial;
+    text-decoration:  none;
+}
+.load .type02{
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+}
+.load h1{
+    font-size: 60px;
+    color: white;
+    font-family: 'Anton', Arial;
+    letter-spacing: 5px;
+}
+.load h2{
+    color: white;
+    margin-top: 40px;
+    font-size: 36px;
+}
+
+
+/* mainheader */
+.header{
+    width: 100%;
+    position: relative;
+    z-index: 3;
+}
+/* >ナビゲーション */
+.mainnavwrap{
+    top: 0;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+}
+.mainnav{
+    height: 80px;
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+.mainnav_a{
+    width: 18%;
+}
+.nav-text{
+    font-size: 21px;
+    display: flex;
+    font-family: 'Arvo', serif;
+}
+.nav-text li{
+    margin-right: 54px;
+}
+.nav-text li:last-child{
+    margin-right: 0;
+}
+.navToggle{
+    display: none;
+}
+/* >ロゴ */
+.header .message{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+}
+.header h1{
+    font-size: 60px;
+    color: white;
+    font-family: 'Anton', Arial;
+    letter-spacing: 5px;
+}
+.header h2{
+    color: white;
+    margin-top: 40px;
+    font-size: 36px;
+}
+/* スクロールボタン */
+.scroll{
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    padding-bottom: 20px;
+    z-index: 3;
+    display: inline-block;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    text-decoration: none;
+}
+.scroll span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+  }
+.cheesekun{
+    position: absolute;
+    bottom: 1vh;
+    right: 1vw;
+    transform: translateY(-100%);
+    width: 10vw;
+    height: 10vw;
+}
+.cheesekun img{
+    position: relative;
+}
+.cheesekun img.push{
+    top: 2px;
+}
+.cheesekun:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.cheesekun p{
+    color: white;
+}
+.balloon{
+    position: absolute;
+    top: 47%;
+    left: 56%;
+    display: none;
+    font-family: "Nico Moji";
+    opacity: 0.9;
+}
+#balloon1 p{
+    text-align:center;
+    font-size: 14px;
+}
+div#balloon1{
+    background: #fff;
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 68px;
+    border: 1px solid #000;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+div#balloon1:before {
+    content: "";
+    display: inline-block;
+    border: 10px solid transparent;
+    border-top-color: #000;
+    position: absolute;
+    left: 43px;
+    bottom: -20px;
+}
+div#balloon1:after {
+    content: "";
+    display: inline-block;
+    border: 9px solid transparent;
+    border-top-color: #fff;
+    position: absolute;
+    left: 44px;
+    bottom: -18px;
+
+}
+
+
+
+/* about */
+.about{
+    padding: 120px 0 64px;
+    text-align: center;
+    background-color: rgba(250,250,250,0.7);
+    background-size: cover;
+    background-position: center center;
+}
+.about h3{
+    font-size: 20px;
+    margin-bottom: 64px;
+}
+.about h4{
+    margin-bottom: 40px;
+}
+.about .about01{
+    margin-bottom: 5px;
+}
+.about .about02{
+    margin-bottom: 40px;
+}
+.about .about03{
+    margin-bottom: 40px;
+}
+.about .about04{
+    margin-bottom: 5px;
+}
+.about .about05{
+    margin-bottom: 80px;
+}
+.aboutimg{
+    width: 100%;
+}
+.aboutimg img{
+    width: 100%;
+    height: auto;
+}
+
+/* course */
+.course{
+    padding-top: 64px;
+}
+.course_intro{
+    text-align: center;
+    width: 100%;
+}
+.course_intro p{
+    margin-bottom: 64px;
+}
+.course_contents{
+    width: 100%;
+    display: flex;
+}
+.course_contents img{
+    width: 50%;
+    height: calc(100%/3);
+}
+.course_contents_wrap{
+    width: 50%;
+    position: relative;
+}
+.course_contents h3{
+    font-size: 24px #222222;
+    margin-bottom: 40px;
+}
+
+.course_contents01_inner{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 48px;
+    margin-right: 96px;
+}
+
+.course_contents02_inner{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 96px;
+    margin-right: 48px;
+}
+
+/* news */
+.news{
+    width: 100%;
+    text-align: center;
+    padding: 112px 0 48px;
+}
+.news p{
+    margin-bottom: 64px;
+}
+.news ul{
+    max-width: 1140px;
+    width: 960px;
+    display: flex;
+    margin: 0 auto;
+}
+.news ul a{
+   display: block;
+   width: 100%;
+   height: 100%;
+}
+.news ul dl{
+    padding-top: 32px;
+}
+.news ul dt{
+    margin-bottom: 24px;
+    text-align: left;
+}
+.news ul dd{
+    text-align: left;
+}
+.news ul li:first-child{
+    margin-right: 32px;
+}
+.news ul li:last-child{
+    margin-left: 32px;
+}
+.news .btn{
+    text-align: center;
+    margin-top: 56px;
+}
+.news .btn a{
+    display: inline-block;
+    line-height: 60px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 60px;
+    color: #fff;
+    font-size: 21px;
+    background: #ffa500;
+}
+
+/* access */
+.access{
+    width: 100%;
+    text-align: center;
+    padding: 64px 0 80px;
+    background: #fafafa;
+}
+.access p{
+    margin-bottom: 64px;
+}
+.iframewrap{
+    position: relative;
+    width: 100%;
+    margin-bottom: 64px;
+
+}
+.iframewrap:before {
+    content:"";
+    display: block;
+    padding-top: 56.25%; /* 高さと幅の比を16:9に固定。9/16*100=56.25 */
+}
+.iframewrap iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.access_inner{
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 408px;
+    padding-left: 20px;
+    border: solid 2px black;/*線*/
+    border-radius: 10px;/*角の丸み*/
+}
+.access_inner dl{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.access_inner dl:first-child{
+    padding-top: 10px
+}
+.access_inner dl:last-child{
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+.access_inner dt{
+    width: 98px;
+    text-align: left;
+}
+.access_inner_02{
+    align-items: center;
+}
+.access_inner dd{
+    width: 290px;
+    text-align: center;
+}
+
+/* contact */
+.contact{
+    padding: 64px 0 64px;
+    text-align: center;
+}
+.contact_text01{
+    margin: 80px auto 32px;
+}
+.contact_text02{
+    margin-bottom: 80px;
+}
+.contact form{
+    width: 600px;
+    margin: 0 auto;
+}
+.contact form dl{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.contact form dl dt{
+    width: 118px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+}
+.contact form dl dd{
+    width: 386px;
+}
+.contact form dl dd input{
+    box-sizing: border-box;
+    width: 386px;
+    height: 36px;
+    font-size: 14px;
+    color: black;
+    border: solid 1px #bfbfbf;
+}
+.contact form dl label{
+    display: flex;
+    justify-content: flex-start;
+}
+.contact form dl label input{
+    width: 24px;
+    height: 24px;
+    margin-right: 40px;
+    border-radius: 1px;
+}
+.contact form dl label p{
+    font-size: 14px;
+}
+.contact form dl dd .text{
+    box-sizing: border-box;
+    width: 386px;
+    height: 108px;
+    border: solid 1px #bfbfbf;
+}
+.form01{
+    margin-bottom: 24px;
+}
+.form01:last-child{
+    margin-bottom: 32px;
+}
+.form02{
+    margin-bottom: 40px;
+}
+.form02 textarea{
+    font-size: 14px;
+    color: black;
+}
+.btn02{
+    width: 298px;
+    height: 54px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 18px;
+    background: #ffa500;
+}
+.btn02:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    height: 80px;
+    background: #707070;
+    text-align: center;
+}
+.footer p{
+    font-size: 14px;
+    line-height: 80px;
+    color: #fff;
+}
+
+/* レスポンシブ */
+@media screen and (max-width : 768px){
+
+    body{
+        font-size: 10px;
+        line-height: 1;
+        max-width: 100%;
+    }
+    .subtitle{
+        font-size: 16px;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+
+    /* ヘッダー */
+
+    .mainnavwrap{
+        top: 0;
+        position: fixed;
+        z-index: 100;
+        width: 100vw;
+        height: 30px;
+        background: #fff;
+    }
+    .mainnav{
+        height: 30px;
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .mainnav_a{
+        width: 20%;
+        height: auto;
+    }
+    /* ハンバーガーメニュー */
+    .mainnav nav{
+        position: fixed;
+        z-index: 101;
+        top: 0;
+        right: 0;
+        background: #fff;
+        color: #000;
+        transform: translateY(-300%);
+        transition: all 0.6s;
+        width: 100%;
+    }
+    .nav-text{
+        background: #ccc;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .nav-text li{
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+    .nav-text li a{
+        display: block;
+        padding: 1em 0;
+        color: #000;
+        font-size: 10px;
+        font-family: 'Arvo', serif;
+    }
+    .mainnav nav.active{
+        transform: translateY(0);
+    }
+    .navToggle {
+        display: block;
+        position: fixed;    /* bodyに対しての絶対位置指定 */
+        right: 0;
+        top: 30px;
+        width: 35px;
+        height: 37px;
+        cursor: pointer;
+        z-index: 3;
+        background: #ccc;
+        text-align: center;
+        opacity: 0.7;
+    }
+    .navToggle:hover{
+        opacity: 1;
+    }
+    .navToggle span {
+        display: block;
+        position: absolute;    /* .navToggleに対して */
+        width: 23px;
+        border-bottom: solid 2px #eee;
+        -webkit-transition: .35s ease-in-out;
+        -moz-transition: .35s ease-in-out;
+        transition: .35s ease-in-out;
+        left: 6px;
+    }
+    .navToggle span:nth-child(1) {
+        top: 9px;
+    }
+    .navToggle span:nth-child(2) {
+        top: 18px;
+    }
+    .navToggle span:nth-child(3) {
+        top: 27px;
+    }
+    .navToggle.active span:nth-child(1) {
+        top: 18px;
+        left: 6px;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+     
+    /* 2番目と3番目のspanを45度に */
+    .navToggle.active span:nth-child(2),
+    .navToggle.active span:nth-child(3) {
+        top: 18px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    /* >ロゴ */
+    .header .message{
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%,-50%,0);
+    }
+    .header h1{
+        padding: 0 1px;
+        font-size: 5vw;
+        color: white;
+        font-family: 'Anton', Arial;
+    }
+    .header h2{
+        color: white;
+        margin-top: 20px;
+        font-size: 4vw;
+    }
+    /* スクロールボタン */
+    .scroll{
+        font-size: 10px;
+        color: #fff;
+        position: absolute;
+        left: 50%;
+        bottom: 10px;
+        padding-bottom: 15px;
+        z-index: 3;
+        display: inline-block;
+        -webkit-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+        text-decoration: none;
+    }
+    .scroll span {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 12px;
+        height: 12px;
+        margin-left: -6px;
+        border-left: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        box-sizing: border-box;
+    }
+    .balloon{
+        display: none;
+    }
+
+    /* about */
+    .about{
+        padding: 30px 20px 16px;
+        text-align: left;
+        background-color: rgba(250,250,250,0.7);
+        background-size: cover;
+        background-position: center center;
+    }
+    .about h3{
+        font-size: 12px;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+    .about h4{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .about .about01{
+        margin-bottom: 0;
+    }
+    .about .about02{
+        margin-bottom: 0;
+    }
+    .about .about03{
+        margin-bottom: 0;
+    }
+    .about .about04{
+        margin-bottom: 0;
+    }
+    .about .about05{
+        margin-bottom: 0;
+    }
+
+    /* course */
+    .course{
+        padding-top: 32px;
+    }
+    .course_intro{
+        margin: 0 auto;
+        text-align: center;
+        width: 80%;
+    }
+    .course_intro p{
+        margin-bottom: 20px;
+    }
+    .course_contents{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .course_contents img{
+        width: 100%;
+        height: calc(100%/3);
+    }
+    .course_contents_wrap{
+        width: 100%;
+        height: 20vh;
+    }
+    .course_contents h3{
+        font-size: 12px #222222;
+        margin-bottom: 20px;
+    }
+
+    .course_contents01_inner{
+        margin-left: 10%;
+        margin-right: 20%;
+    }
+
+    .course_contents02_inner{
+        margin-left: 10%;
+        margin-right: 20%;
+    }
+    .order3{
+        order: 4;
+    }
+    .order4{
+        order: 3;
+    }
+    /* news */
+    .news{
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        padding: 40px 0 20px;
+        background: blanchedalmond;
+    }
+    .news p{
+        margin-bottom: 32px;
+    }
+    .news ul{
+        max-width: 95%;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+    .news ul a{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .news ul dl{
+        padding-top: 10px;
+    }
+    .news ul dt{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .news ul dd{
+        text-align: left;
+        font-size: 10px;
+    }
+    .news ul li:first-child{
+        margin-right: 2vw;
+    }
+    .news ul li:last-child{
+        margin-left: 2vw;
+    }
+    .news .btn{
+        text-align: center;
+        margin-top: 56px;
+    }
+    .news .btn a{
+        display: inline-block;
+        line-height: 20px;
+        box-sizing: border-box;
+        width: 100px;
+        height: 20px;
+        color: #fff;
+        font-size: 12px;
+        background: #ffa500;
+    }
+    
+    /* access */
+    .access{
+        width: 100%;
+        text-align: center;
+        padding: 32px 0 40px;
+        background: #fafafa;
+    }
+    .access p{
+        margin-bottom: 32px;
+    }
+    .iframewrap{
+        position: relative;
+        width: 100%;
+        margin-bottom: 32px;
+
+    }
+    .iframewrap:before {
+        content:"";
+        display: block;
+        padding-top: 56.25%; /* 高さと幅の比を16:9に固定。9/16*100=56.25 */
+    }
+    .iframewrap iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .access_inner{
+        font-size: 10px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 0 1px;
+        width: 60%;
+        border: solid 1px black;/*線*/
+        border-radius: 5px;/*角の丸み*/
+    }
+    .access_inner dl{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 12px;
+    }
+    .access_inner dl:first-child{
+        padding-top: 10px
+    }
+    .access_inner dl:last-child{
+        padding-bottom: 10px;
+        margin-bottom: 0;
+    }
+    .access_inner dt{
+        width: 20%;
+        text-align: center;
+    }
+    .access_inner dd{
+        width: 80%;
+        text-align: center;
+    }
+
+    /* contact */
+    .contact{
+        padding: 16px 0 16px;
+        text-align: center;
+    }
+    .contact_text01{
+        margin: 20px auto 8px;
+    }
+    .contact_text02{
+        margin-bottom: 20px;
+    }
+    .contact form{
+        width: 94%;
+        margin: 0 auto;
+    }
+    .contact form dl{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .contact form dl dt{
+        width: 100%;
+        height: auto;
+        text-align: left;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .contact form dl dd{
+        width: 100%;
+    }
+    .contact form dl dd input{
+        box-sizing: border-box;
+        width: 100%;
+        height: 36px;
+        font-size: 14px;
+        color: black;
+        border: solid 1px #bfbfbf;
+    }
+    .contact form dl label{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .contact form dl label input{
+        width: 12px;
+        height: 12px;
+        margin-right: 5px;
+        border-radius: 1px;
+    }
+    .contact form dl label p{
+        font-size: 12px;
+    }
+    .contact form dl dd .text{
+        box-sizing: border-box;
+        width: 100%;
+        height: 108px;
+        border: solid 1px #bfbfbf;
+    }
+    .form01{
+        margin-bottom: 10px;
+    }
+    .form01:last-child{
+        margin-bottom: 10px;
+    }
+    .form02{
+        margin-bottom: 10px;
+    }
+    .form02 textarea{
+        font-size: 14px;
+        color: black;
+    }
+    .btn02{
+        width: 100px;
+        height: 20px;
+        box-sizing: border-box;
+        color: #fff;
+        font-size: 12px;
+        background: #ffa500;
+    }
+    .btn02:hover{
+        cursor: pointer;
+        opacity: 0.7;
+    }
+    /* footer */
+    .footer{
+        width: 100%;
+        height: 40px;
+        background: #707070;
+        text-align: center;
+        position: relative;
+        z-index: 3;
+    }
+    .footer p{
+        font-size: 10px;
+        line-height: 40px;
+        color: #fff;
+    }
+    .up{
+        position: fixed;
+        right: 1%;
+        text-align: center;
+        bottom: 10px;
+        z-index: 2;
+    }
+    .up a{
+        display: inline-block;
+    }
+    .uptop img{
+        width: 50%;
+    }
+    .uptop p{
+        margin-top: -7px;
+    }
+    /* ロード画面 */
+    .load{
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+    .type{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: black;
+        color: white;
+    }
+    .load del{
+        font-size: 5vw;
+        color: white;
+        font-family: 'Anton', Arial;
+        text-decoration:  none;
+    }
+    .load .type02{
+        color: white;
+        font-size: 4vw;
+        font-weight: bold;
+    }
+    .load h1{
+        font-size: 5vw;
+        color: white;
+        font-family: 'Anton', Arial;
+    }
+    .load h1 del{
+        font-size: 5vw;
+    }
+    .load h2{
+        color: white;
+        margin-top: 40px;
+        font-size: 4vw;
+    }
+    
+
+}
