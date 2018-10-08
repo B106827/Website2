@@ -4,7 +4,7 @@ html/css/jqueryでサイト制作しました。前回制作したものをブ�
 URL https://b106827.sakura.ne.jp/work_02    
   
 ・jQuery  
-index.html-288行目  
+index.html288行目  
 -スクロールで要素フェードイン  
 316行目  
 -トグルナビアニメーション  
