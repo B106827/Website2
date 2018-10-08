@@ -288,9 +288,9 @@
         // fade-in
         $(window).scroll(function (){
             $('.fadein').each(function(){
-                var POS = $(this).offset().top;  //fadeinクラスがついている要素の上からのy軸距離取得
-                var scroll = $(window).scrollTop();  //ウインドウのスクロール位置取得
-                var windowHeight = $(window).height();  //ウィンドウの高さ取得
+                var POS = $(this).offset().top;  //fade-inがついている要素の位置
+                var scroll = $(window).scrollTop();  //スクロール一
+                var windowHeight = $(window).height();  //ウィンドウの高さ
 
                 if (scroll > POS - windowHeight + windowHeight/5){
                     $(this).css("opacity","1" );
@@ -299,9 +299,9 @@
                 }
             });
             $('.fadein1').each(function(){
-                var POS = $(this).offset().top;  //fadein1クラスがついている要素の上からのy軸距離取得
-                var scroll = $(window).scrollTop();  //ウインドウのスクロール位置取得
-                var windowHeight = $(window).height();  //ウィンドウの高さ取得
+                var POS = $(this).offset().top;  //fade-inがついている要素の位置
+                var scroll = $(window).scrollTop();  //スクロール一
+                var windowHeight = $(window).height();  //ウィンドウの高さ
 
                 if (scroll > POS - windowHeight + windowHeight/5){
                     $(this).css("opacity","1" );
@@ -313,7 +313,6 @@
 
     });
 
-    // トグルナビ
     $(function(){
         $('.navToggle').click(function(){
             $(this).toggleClass('active');
@@ -325,12 +324,11 @@
         });
     });
 
-    // おみくじ
     $(function(){
         $('.cheesekun').on('click',function(){
-            let omikuji = ['大吉やわい','中吉やわい','小吉やわい','吉やわい','あかん。凶やわい','大凶。もんたほうがええかもね・・・'];  //おみくじ用意
-            let i = Math.floor(Math.random()*omikuji.length);  //(0以上1未満ランダム)*おみくじの要素数を切り捨てして整数に
-            let w = window.innerWidth;  //画面幅(px)
+            let omikuji = ['大吉やわい','中吉やわい','小吉やわい','吉やわい','あかん。凶やわい','大凶。もんたほうがええかもね・・・'];
+            let i = Math.floor(Math.random()*omikuji.length);
+            let w = window.innerWidth;
             let img = $(this).children('img');
             $(img).addClass('push');
             setTimeout(function(){
