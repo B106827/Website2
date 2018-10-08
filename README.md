@@ -1,7 +1,7 @@
-# Website2
-html/css/jqueryでサイト制作しました。前回制作したものをブラッシュアップしました。
-またjQueryで自作の機能を実装しました。
-URL https://b106827.sakura.ne.jp/work_02  
+# Website2  
+html/css/jqueryでサイト制作しました。前回制作したものをブラッシュアップしました。  
+またjQueryで自作の機能を実装しました。  
+URL https://b106827.sakura.ne.jp/work_02    
   
 <jQuery>  
 index.html-288行目  
