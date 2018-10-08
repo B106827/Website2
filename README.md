@@ -3,7 +3,7 @@ html/css/jqueryでサイト制作しました。前回制作したものをブ�
 またjQueryで自作の機能を実装しました。  
 URL https://b106827.sakura.ne.jp/work_02    
   
-<jQuery>  
+・jQuery  
 index.html-288行目  
 -スクロールで要素フェードイン  
 316行目  
@@ -11,7 +11,7 @@ index.html-288行目
 328行目  
 -おみくじ機能  
   
-<プラグイン>  
+・プラグイン  
 jquery.bgswitcher.js  
 -指定画像のスイッチング  
 scroll.js  
