@@ -1,5 +1,6 @@
 # Website2  
-html/css/jqueryでサイト制作。前回制作したもののブラッシュアップ。  
+html/css/jqueryでサイト制作。
+前回(https://github.com/B106827/Website)制作したもののブラッシュアップ。  
 また、jQueryで自作の機能を実装。  
 
 ## URL  
