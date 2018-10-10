@@ -1,9 +1,11 @@
 # Website2  
 html/css/jqueryでサイト制作。前回制作したもののブラッシュアップ。  
 また、jQueryで自作の機能を実装。  
-URL https://b106827.sakura.ne.jp/work_02    
+
+## URL  
+https://b106827.sakura.ne.jp/work_02    
   
-・jQuery  
+## jQuery  
 index.html288行目  
 -スクロールで要素フェードイン  
 316行目  
@@ -11,7 +13,7 @@ index.html288行目
 328行目  
 -おみくじ機能  
   
-・プラグイン  
+## プラグイン  
 jquery.bgswitcher.js  
 -指定画像のスイッチング  
 scroll.js  
